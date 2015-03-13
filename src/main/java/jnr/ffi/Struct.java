@@ -1999,7 +1999,7 @@ public abstract class Struct {
         }
     }
 
-    protected final class Function<T> extends AbstractMember {
+    public final class Function<T> extends AbstractMember {
         private final Class<? extends T> closureClass;
         private T instance;
 
@@ -2013,7 +2013,7 @@ public abstract class Struct {
         }
     }
 
-    protected final <T> Function<T> function(Class<T> closureClass) {
+    public final <T> Function<T> function(Class<T> closureClass) {
         return new Function<T>(closureClass);
     }
 
